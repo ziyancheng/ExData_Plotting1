@@ -35,4 +35,3 @@ legend("topright", lty = 1, col = c("black", "red", "blue"),
        bty = "n")
 
 plot(Global_reactive_power ~ dateTime, type = "l")
-png("plot4.png", width = 480, height = 480)
