@@ -10,6 +10,5 @@ subsetData <- datafile %>% select(V3)  %>% mutate(V3 = as.numeric(as.character(V
 
 
 hist(datafile$V3, col = "red", main = "Global Active Power", xlab = "Global Active Power (killowatts)", ylab = "Frequency")
-png("plot1.png")
+dev.copy(png, file ="plot1.png", width = 480, height = 480)
 dev.off()
-
