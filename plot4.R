@@ -35,3 +35,5 @@ legend("topright", lty = 1, col = c("black", "red", "blue"),
        bty = "n")
 
 plot(Global_reactive_power ~ dateTime, type = "l")
+dev.copy(png, file ="plot4.png", width = 480, height = 480)
+dev.off()
